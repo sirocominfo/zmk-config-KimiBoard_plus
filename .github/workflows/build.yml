@@ -26,7 +26,7 @@ jobs:
                  -DZMK_EXTRA_MODULES="/workspaces/zmk-modules/zmk-pmw3610-driver"
 
       - name: Upload built UF2
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4   # ← ここを v4 に変更
         with:
           name: kimi-board-zmk.uf2
           path: app/build/zephyr/zmk.uf2
