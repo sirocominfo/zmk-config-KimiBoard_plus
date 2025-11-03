@@ -6,7 +6,7 @@
 
 &trackball {
     automouse-layer = <2>;
-    scroll-layers = <1>;
+    scroll-layers = <3>;
 
     // arrows {
     //     layers = <3>;
@@ -52,18 +52,21 @@
         default_layer {
             bindings = <
                 // row0（上段）右から左に書く
-                &mkp RCLK       &mkp LCLK       &mkp MB3   &bt BT_CLR
-
-                // row1（下段）右から左に書く
-                &kp ENTER       &kp SPACE       &kp BACKSPACE  &trans
+                &kp ENTER       &kp SPACE       &kp BACKSPACE  &kp ENTER
             >;
 	};
 
-//    auto_mouse_layer {
-//            bindings = <
-//                &mkp RCLK &mkp LCLK &mkp MB3
-//        >;
-//    };
+    mouse_key_layer {
+            bindings = <
+                &mkp RCLK &mkp LCLK &mkp MB3
+        >;
+    };
+
+    auto_mouse_layer {
+            bindings = <
+                &mkp RCLK &mkp LCLK &mkp MB3
+        >;
+    };
 
     scroll_layer {
             bindings = <
@@ -71,6 +74,8 @@
         >;
     };
     
+
+
     };
 
     combos {
@@ -79,9 +84,28 @@
         // Key1 + 2 =
 
         combo_layer1 {
-            bindings = <&mo 1>;
+            bindings = <&mo 3>;
             key-positions = <1 2>;
             timeout-ms = <50>;
         };
+        
+        // Key2 + 3 =
+
+        combo_layer2 {
+            bindings = <&tog 1>;      // 1番レイヤーをトグル
+            key-positions = <0 1>;
+            timeout-ms = <50>;
+        };
+            // Key2 + 3 =
+
+
+        combo_layer3 {
+            bindings = <&bt BT_CLR>;      // BT設定を全て消去
+            key-positions = <0 1 2>;
+            timeout-ms = <50>;
+        };
+
+
     };
+
 };
