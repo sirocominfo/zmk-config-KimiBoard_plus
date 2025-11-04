@@ -51,26 +51,26 @@
 
         default_layer {
             bindings = <
-                // row0（上段）右から左に書く
-                &kp ENTER       &kp SPACE       &kp BACKSPACE  &kp ENTER
+                // row0左から右へ（一番左のキーはリセットボタン）
+                &bt BT_CLR  &kp BACKSPACE  &kp SPACE  &kp ENTER
             >;
 	};
 
     mouse_key_layer {
             bindings = <
-                &mkp RCLK &mkp LCLK &mkp MB3
+                &trans  &mkp MB3  &mkp LCLK  &mkp RCLK
         >;
     };
 
     auto_mouse_layer {
             bindings = <
-                &mkp RCLK &mkp LCLK &mkp MB3
+                &trans  &mkp MB3  &mkp LCLK  &mkp RCLK
         >;
     };
 
     scroll_layer {
             bindings = <
-                &trans  &trans  &trans
+                &trans  &trans  &trans  &trans
         >;
     };
     
@@ -81,7 +81,7 @@
     combos {
         compatible = "zmk,combos";
 
-        // Key1 + 2 =
+        // Key1 + 2 =      // スクロールレイヤー
 
         combo_layer1 {
             bindings = <&mo 3>;
@@ -93,7 +93,7 @@
 
         combo_layer2 {
             bindings = <&tog 1>;      // 1番レイヤーをトグル
-            key-positions = <0 1>;
+            key-positions = <2 3>;
             timeout-ms = <50>;
         };
             // Key2 + 3 =
@@ -101,7 +101,7 @@
 
         combo_layer3 {
             bindings = <&bt BT_CLR>;      // BT設定を全て消去
-            key-positions = <0 1 2>;
+            key-positions = <1 2 3>;
             timeout-ms = <50>;
         };
 
