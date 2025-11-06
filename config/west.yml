@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: sirocominfo
       url-base: https://github.com/sirocominfo
+    - name: caksorlar
+      url-base: https://github.com/caksorlar
   projects:
     - name: zmk
       remote: zmkfirmware
