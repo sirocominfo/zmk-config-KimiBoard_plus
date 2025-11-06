@@ -85,7 +85,7 @@
         // Key1 + 2 = (□ - ■ ■ □)
 			// スクロールレイヤー
 
-        combo_layer1 {1
+        combo_layer1 {
             bindings = <&mo 3>;
             key-positions = <1 2>;
             timeout-ms = <50>;
