@@ -14,10 +14,13 @@
 
     keys = 
             // w  h   x   y   rot rx ry
-             <&key_physical_attrs  50  100   0  0  0  0  0>   // SW1(リセット用ボタン)
-            , <&key_physical_attrs 100 100 120  0  0  0  0>   // SW2(左ボタン)
-            , <&key_physical_attrs 100 100 240  0  0  0  0>   // SW3(中央ボタン)
-            , <&key_physical_attrs 100 100 360  0  0  0  0>   // SW4(右ボタン)
+             <&key_physical_attrs  50  100   0  0    0  0  0>   // SW1(リセット用ボタン)
+            , <&key_physical_attrs 100 100 120  0    0  0  0>   // SW2(上段左ボタン)
+            , <&key_physical_attrs 100 100 240  0    0  0  0>   // SW3(上段中央ボタン)
+            , <&key_physical_attrs 100 100 360  0    0  0  0>   // SW4(上段右ボタン)
+            , <&key_physical_attrs 100 100 120  100  0  0  0>   // SW2(下段左ボタン)
+            , <&key_physical_attrs 100 100 120  100  0  0  0>   // SW2(下段中央ボタン)
+            , <&key_physical_attrs 100 100 120  100  0  0  0>   // SW2(下段右ボタン)
             ;
     };
 
@@ -26,7 +29,8 @@
         rows = <4>;
         columns = <5>;
         map = <
-        RC(3,3) RC(2,2) RC(1,1) RC(0,0)    // SW4〜SW1(4はリセット用スイッチ)
+        RC(3,3) RC(2,2) RC(1,1) RC(0,0)    // SW1〜SW4(1はリセット用スイッチ)
+                RC(4,2) RC(4,1) RC(4,0)    // SW5〜SW7
         >;
     };
 
