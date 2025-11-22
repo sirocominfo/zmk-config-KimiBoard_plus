@@ -54,7 +54,7 @@
             bindings = <
                 // row0左から右へ（一番左のキーはリセットボタン）
                 &bt BT_NXT  &kp BACKSPACE  &kp SPACE  &kp ENTER
-                            &kp A          &kp B      &kp C 
+                            &mkp MB3       &mkp LCLK  &mkp RCLK
             >;
 	};
 
