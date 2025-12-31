@@ -54,7 +54,7 @@
 			// スクロールレイヤー
 
         combo_layer1 {
-            bindings = <&mo 3>;
+            bindings = <&mo 2>;
             key-positions = <4 5>;
             timeout-ms = <50>;
         };
