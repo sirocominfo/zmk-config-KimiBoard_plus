@@ -74,7 +74,7 @@
         //            (    ■ □ □)
 			// タップでLANGUAGE_1へ切り替え
 
-        combo_layer2 {
+        combo_layer3 {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <3 6>;
             timeout-ms = <50>;
@@ -92,7 +92,7 @@
 		// Key1 + 3 = (■ -  ■ □ □)
 			// 現在の接続先のBT接続情報を消去
 
-        combo_layer7 {
+        combo_layer5 {
             bindings = <&bt BT_CLR>;
             key-positions = <0 3>;
             timeout-ms = <50>;
