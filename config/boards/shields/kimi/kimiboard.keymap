@@ -49,7 +49,7 @@
     combos {
         compatible = "zmk,combos";
 
-        // Key1 + 2 = (□ - □ □ □)
+        // Key4 + 5 = (□ - □ □ □)
         //            (    ■ ■ □)
 			// スクロールレイヤー
 
@@ -59,7 +59,7 @@
             timeout-ms = <50>;
         };
         
-        // Key1 + 2 = (□ - ■ □ □)
+        // Key1 + 4 = (□ - ■ □ □)
         //            (    ■ □ □)
 			// タップでLANGUAGE_2へ切り替え
 
@@ -69,8 +69,8 @@
             timeout-ms = <50>;
         };
 
-        // Key1 + 2 = (□ - ■ □ □)
-        //            (    ■ □ □)
+        // Key3 + 6 = (□ - □ □ ■)
+        //            (    □ □ ■)
 			// タップでLANGUAGE_1へ切り替え
 
         combo_layer3 {
@@ -80,6 +80,7 @@
         };
 
         // Key1 + 3 = (□ -  ■ □ ■)
+        //            (□ -  □ □ □)
 			// 1番レイヤーをトグル(マウス操作限定レイヤー)
 
         combo_layer4 {
@@ -88,12 +89,23 @@
             timeout-ms = <50>;
         };
 
-		// Key1 + 3 = (■ -  ■ □ □)
-			// 現在の接続先のBT接続情報を消去
+		// Key1 + 2 + 4 + 5 = (□ - ■ ■ □)
+        //                    (    ■ ■ □)
+			// 接続先を変更（1→3トグル）
 
         combo_layer5 {
+            bindings = <&bt BT_NXT>;
+            key-positions = <1 2 4 5>;
+            timeout-ms = <50>;
+        };
+
+		// Key2 + 3 + 5 + 6 = (□ - □ ■ ■)
+        //                    (    □ ■ ■)
+			// 現在の接続先のBT接続情報を消去
+
+        combo_layer6 {
             bindings = <&bt BT_CLR>;
-            key-positions = <0 3>;
+            key-positions = <2 3 5 6>;
             timeout-ms = <50>;
         };
 
