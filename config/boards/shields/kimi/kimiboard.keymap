@@ -6,8 +6,9 @@
 #include <behaviors/rgbled_widget.dtsi>
 
 &trackball {
-//  automouse-layer = <2>;
-    scroll-layers = <3>;
+    scroll-layers = <2>;
+//  automouse-layer = <3>;
+
 };
 
 
@@ -30,12 +31,6 @@
         >;
     };
 
-    //  auto_mouse_layer {
-    //      bindings = <
-    //          &trans  &mkp MB3  &mkp LCLK  &mkp RCLK
-    //  >;
-    //  };
-
     scroll_layer {
             bindings = <
                 &trans  &trans  &trans  &trans
@@ -43,7 +38,11 @@
         >;
     };
     
-
+    //  auto_mouse_layer {
+    //      bindings = <
+    //          &trans  &mkp MB3  &mkp LCLK  &mkp RCLK
+    //  >;
+    //  };
 
     };
 
