@@ -1,0 +1,4 @@
+#ifndef DT_BINDINGS_ZMK_KIMIBOARD_H_
+#define DT_BINDINGS_ZMK_KIMIBOARD_H_
+
+#endif

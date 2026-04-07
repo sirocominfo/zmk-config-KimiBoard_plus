@@ -1,0 +1,14 @@
+description: KimiBoard trackball rotation behavior (local-only, no HID output)
+
+compatible: "kimiboard,tb-rotate"
+
+properties:
+  "#binding-cells":
+    type: int
+    const: 0
+    description: "No extra cells"
+
+  cw:
+    type: int
+    required: true
+    description: "1 = rotate clockwise, 0 = rotate counter-clockwise"
