@@ -109,6 +109,15 @@
             timeout-ms = <50>;
         };
 
+		// Key0 + 1 + 2 + 3 + 4 + 5 + 6 = (■ - ■  ■ ■)
+        //                                (    ■  ■ ■)
+			// ブートローダーへ入る
+
+		combo_bootloader {
+  			bindings = <&bootloader>;
+			key-positions = <0 1 2 3 4 5 6>;
+    		timeout-ms = <50>;
+		};
 
     };
 
